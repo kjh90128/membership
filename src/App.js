@@ -3,7 +3,7 @@ import styles from './App.module.css';
 import Login from './components/login/login';
 import Maker from './components/maker/maker';
 
-function App({authService}) {
+function App({FileInput, authService}) {
   console.log(process.env.REACT_APP_FIREBASE_API_KEY)
   return (
     <div className={styles.app}>
@@ -13,7 +13,7 @@ function App({authService}) {
             <Login authService={authService} />
           </Route>
           <Route path='/maker'>
-            <Maker authService={authService} />
+            <Maker authService={authService} FileInput={FileInput}/>
           </Route>
         </Switch>
       </BrowserRouter>
