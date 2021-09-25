@@ -1,0 +1,113 @@
+@value makerBlack,makerWhite,makerShadow,makerColorful,makerWheat,makerquit,makerquitFont,makerLightGrey,makerGrey from '../../common/colors.css';
+
+.card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 1em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0;
+  box-shadow: 6px 6px 8px 0px makerShadow;
+  max-width: 30rem;
+}
+
+.card.quit {
+  background-color: makerquit;
+  color: makerquitFont;
+}
+
+.card.incumbent {
+  background-color: makerWhite;
+  color: makerBlack;
+  border: 1px solid makerLightGrey;
+}
+
+.card.fired {
+  background: makerColorful;
+}
+
+.avatar {
+  width: 10rem;
+  height: 10rem;
+  padding: 1em;
+  margin-left: 0.5em;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+.info {
+  width: 100%;
+  overflow: hidden;
+}
+
+.name,
+.department,
+.position,
+.email,
+.message,
+.phone,
+.label,
+.hiredate {
+  margin: 0;
+  font-size: 0.9rem;
+  margin-bottom: 0.2em;
+}
+
+.label,
+.position,
+.hiredate {
+  color: makerGrey;
+}
+
+.position {
+  margin-left: 0.5em;
+}
+
+.email,
+.phone {
+  font-size: 1rem;
+}
+
+.default {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hiredate {
+  margin-right: 3em;
+  font-size: 0.9rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.company {
+  display: flex;
+  flex-direction: row;
+}
+
+.border {
+  margin-bottom: 1em;
+  width: 92%;
+}
+
+.border::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 2px;
+  background-color: makerWheat;
+  transform: translateY(0.5em);
+}
+
+.message {
+  word-break: break-all;
+  width: 85%;
+}

@@ -1,0 +1,34 @@
+@value makerWhite, makerGreen, makerButton,makerDelte from '../../common/colors.css';
+
+.button {
+  color: makerWhite;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 0.8rem;
+  background-color: makerGreen;
+}
+
+.default,
+.delete {
+  flex: 1 1 50%;
+  vertical-align: top;
+}
+
+.btnStyle {
+  height: 2rem;
+  width: 6rem;
+  margin-right: 1.5rem;
+  background-color: makerButton;
+  border-color: makerButton;
+}
+
+.delete {
+  background-color: makerDelte;
+  border-color: makerDelte;
+}
+
+.test:hover,
+.button:hover {
+  opacity: 0.8;
+}

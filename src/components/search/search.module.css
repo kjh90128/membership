@@ -1,0 +1,16 @@
+.form {
+  height: 100%;
+  right: 0;
+  position: absolute;
+}
+
+.search,
+.select {
+  height: 80%;
+  font-size: 1rem;
+  padding: 0.5em 0;
+}
+
+.select {
+  padding: 0 0.5em;
+}
