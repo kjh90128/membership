@@ -38,6 +38,11 @@ const Login = ({ authService }) => {
           </li>
           <li className={styles.item}>
             <button onClick={onLogin} className={styles.button}>
+              Facebook
+            </button>
+          </li>
+          <li className={styles.item}>
+            <button onClick={onLogin} className={styles.button}>
               Github
             </button>
           </li>

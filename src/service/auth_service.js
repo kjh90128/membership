@@ -1,4 +1,9 @@
-import { firebaseAuth, githubProvider, googleProvider } from "./firebase";
+import {
+  facebookProvider,
+  firebaseAuth,
+  githubProvider,
+  googleProvider,
+} from "./firebase";
 
 class AuthService {
   login(providerName) {
@@ -22,6 +27,8 @@ class AuthService {
         return googleProvider;
       case "Github":
         return githubProvider;
+      case "Facebook":
+        return facebookProvider;
       default:
         return new Error(`not supported provider: ${providerName}`);
     }

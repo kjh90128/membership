@@ -24,6 +24,12 @@ const CardAddForm = memo(({ FileInput, onAdd }) => {
     if (card.name === "") {
       nameRef.current.focus();
       return false;
+    } else if (card.department === "") {
+      departmentRef.current.focus();
+      return false;
+    } else if (card.position === "") {
+      positionRef.current.focus();
+      return false;
     } else {
       return true;
     }
@@ -43,6 +49,7 @@ const CardAddForm = memo(({ FileInput, onAdd }) => {
       fileName: file.fileName || "",
       fileURL: file.fileURL || "",
     };
+
     const validate = validateInput(card);
     if (!validate) {
       return;

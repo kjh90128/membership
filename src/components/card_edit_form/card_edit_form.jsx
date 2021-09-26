@@ -94,7 +94,7 @@ const CardEditForm = ({
         <option placeholder="get fired">get fired</option>
       </select>
       <input
-        className={styles.input}
+        className={styles.info}
         type="text"
         name="position"
         value={position}
@@ -121,7 +121,7 @@ const CardEditForm = ({
         onChange={onChange}
       />
       <input
-        className={styles.input}
+        className={styles.info}
         type="text"
         name="email"
         value={email}
